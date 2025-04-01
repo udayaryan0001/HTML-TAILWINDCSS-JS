@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex justify-center items-center min-h-screen bg-gray-900 text-white">
+
+    <div class="p-6 bg-gray-800 shadow-lg rounded-lg">
+        <h2 class="text-center text-2xl font-bold mb-4 text-blue-400">Multiplication Table (1 to 5)</h2>
+        <div class="overflow-x-auto">
+            <table class="w-full border border-gray-600 text-center">
+                <script>
+                    document.write("<thead class='bg-blue-500 text-white'>");
+                    document.write("<tr>");
+                    document.write("<th class='py-2 px-4 border border-gray-500'>No</th>");
+                    for (let i = 1; i <= 5; i++) {
+                        document.write("<th class='py-2 px-4 border border-gray-500'>" + i + "</th>");
+                    }
+                    document.write("</tr>");
+                    document.write("</thead>");
+
+                    document.write("<tbody>");
+                    for (let i = 1; i <= 10; i++) {
+                        document.write("<tr class='odd:bg-gray-700 even:bg-gray-600'>");
+                        document.write("<td class='py-2 px-4 border border-gray-500 font-bold'>" + i + "</td>");
+                        for (let j = 1; j <= 5; j++) {
+                            document.write("<td class='py-2 px-4 border border-gray-500'>" + (i * j) + "</td>");
+                        }
+                        document.write("</tr>");
+                    }
+                    document.write("</tbody>");
+                </script>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pracform</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body class="bg-gray-400 pp-4 bg-gradient-to-b from-pink-400 via-blue-700 to-white ">
+    <nav class="flex justify-between items-center bg-gradient-to-b from-pink-400 via-blue-300 w-full">
+        <a href="#" id="brand" class="flex gap-x-2 items-center pl-2 ">
+            <img class="  object-cover h-12 max-w-12 max-h-12" src="/assets/asset 13.png" alt="logo">
+            <span class="text-lg font-medium font-display">Kriudtech</span>
+        </a>
+        <div class="flex gap-x-8 items-center justify-center mx-auto">
+            <a class="hover:"> pricing </a>
+            <a> about </a>
+            <a> contact </a>
+            <a> home</a>
+        </div>
+    </nav>
+    <div id="maindiv" class="w-full max-w-md mx-auto bg-white rounded-2xl p-10 border border-l-black bg-gradient-to-b from-pink-300 via-blue-200 to-white mt-32">
+        <h1 class="text-3xl text-center font-bold">
+            Tailwind css project
+        </h1>
+        <form class="space-y-4">
+            <div id="name" class="mb-8">
+                <label for="name" class="block mt-6">Name:</label>
+                <input type="text" placeholder="Enter your name" class="border rounded w-full px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 hover:bg-gray-100">
+            </div> 
+            <div id="gmail" class="mb-8" >
+                <label class="block ">Email</label>
+                <input type="email" placeholder="Enter your email"  class="border rounded w-full px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 hover:bg-gray-100">
+            </div>
+            <div id="password" class="mb-8">
+                <label class="block">Password</label>
+                <input type="password" placeholder="Enter your password"  class="border rounded w-full px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 hover:bg-gray-100">
+            </div>
+            <div id="message" class="mb-8">
+               <label class="block">Message</label> 
+               <textarea placeholder="Enter your message"  class="border rounded w-full px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 hover:bg-gray-100"></textarea>
+            </div>
+            <div id="button" class= "bg-blue-600 p-3 rounded-2xl w-full mb-6 text-center font-bold text-xl hover:bg-blue-300">submit</div>
+        </form>
+    </div>
+</body>
+</html>

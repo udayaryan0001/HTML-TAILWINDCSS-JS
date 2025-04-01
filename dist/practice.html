@@ -1,0 +1,137 @@
+ 
+Copy
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Kriudtech - School Management</title>
+    <style>
+        /* Custom animation styles */
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="p-3 flex bg-white justify-between items-center shadow-sm">
+        <a href="#" class="flex gap-x-2 items-center">
+            <img class="h-12 w-12" src="/assets/asset13.png" alt="Logo">
+            <span class="text-lg font-semibold">Kriudtech</span>
+        </a>
+        
+        <div class="hidden md:flex gap-8 items-center">
+            <a href="#" class="hover:text-blue-600">Pricing</a>
+            <a href="#" class="hover:text-blue-600">Features</a>
+            <a href="#" class="hover:text-blue-600">Demo</a>
+            <a href="#" class="hover:text-blue-600">Modules</a>
+            <a href="#" class="hover:text-blue-600">About</a>
+            <button class="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+                <span>Get Started</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+
+        <button class="md:hidden p-2" onclick="toggleMenu()">
+            <i class="fas fa-bars text-xl"></i>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="fixed inset-0 bg-white z-50 hidden">
+        <div class="p-4 flex justify-between items-center border-b">
+            <img class="h-12 w-12" src="/assets/asset13.png" alt="Logo">
+            <button onclick="toggleMenu()" class="p-2">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+        </div>
+        <div class="p-4 flex flex-col gap-4">
+            <a href="#" class="p-2 hover:bg-gray-100 rounded">Pricing</a>
+            <a href="#" class="p-2 hover:bg-gray-100 rounded">Features</a>
+            <a href="#" class="p-2 hover:bg-gray-100 rounded">Demo</a>
+            <a href="#" class="p-2 hover:bg-gray-100 rounded">Modules</a>
+            <a href="#" class="p-2 hover:bg-gray-100 rounded">About</a>
+            <button class="mt-4 bg-blue-600 text-white py-2 rounded-lg">
+                Get Started
+            </button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen bg-gradient-to-b from-purple-50 to-white">
+        <div class="max-w-6xl mx-auto px-4 py-20">
+            <div class="text-center mb-12">
+                <div class="inline-flex items-center bg-yellow-100 px-4 py-2 rounded-full mb-8">
+                    <span class="mr-2">✨</span>
+                    <span>Free Trial Available!</span>
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    Transform Your School Management
+                    <span class="text-blue-600">Digitally</span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                    Comprehensive cloud-based school management system for modern educational institutions.
+                </p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center">
+                    <button class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700">
+                        Start Free Trial
+                    </button>
+                    <button class="border border-gray-300 px-8 py-3 rounded-lg hover:border-gray-400">
+                        Watch Demo
+                    </button>
+                </div>
+            </div>
+
+            <!-- Feature Grid -->
+            <div class="grid md:grid-cols-3 gap-8 mt-16">
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg mb-4 flex items-center justify-center">
+                        <i class="fas fa-cloud text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Cloud Powered</h3>
+                    <p class="text-gray-600">Access your school data securely from anywhere</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg mb-4 flex items-center justify-center">
+                        <i class="fas fa-chart-line text-green-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Real-time Analytics</h3>
+                    <p class="text-gray-600">Make data-driven decisions with live insights</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg mb-4 flex items-center justify-center">
+                        <i class="fas fa-mobile-alt text-purple-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Mobile Friendly</h3>
+                    <p class="text-gray-600">Manage on-the-go with our mobile app</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logo Marquee -->
+    <div class="bg-gray-50 py-12 overflow-hidden">
+        <div class="marquee-container">
+            <div class="flex gap-8 marquee-content" id="marqueeLine1">
+                <!-- Add your logo images here -->
+                <img src="logo1.png" class="h-12 grayscale hover:grayscale-0 transition-all">
+                <img src="logo2.png" class="h-12 grayscale hover:grayscale-0 transition-all">
+                <!-- Add more logos as needed -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Simple, Transparent Pricing</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Pricing cards here -->
+            </div>
+        </div>
+    </section>
+
+<script>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body>
+</body>
+<!-- 
+documentcreateElement(tagName);
+documentcreateElement(); -->
+<P id="p1">Para 1</P>
+<P id="p2">Para 2</P>
+<P id="p3">Para 3</P>
+<button onclick="changetext()">Replace</button>
+<script>
+   let pera= document.createElement("p");
+   pera.textContent="this is new paragraph";
+   document.body.appendChild(pera);
+   let node=document.createTextNode("text node content");
+   document.body.appendChild(node);
+
+
+  let div1 = document.createElement("div");
+  div1.className = "bg-blue-500 text-white p-4 rounded";   //add the tailwind css by using this class name
+  div1.textContent = "This is a new div";          //for giving the text
+  document.body.appendChild(div1);
+  div1.appendChild(pera);
+  div1.removeChild(pera);
+  //document.getElementByid(id);
+  //document.getElementByClassname(class name);
+  //document.getElementByTagName(tag name);
+  //document.querySelector(Selector);
+  //document.querySelectorAll(Selector);
+
+  
+  let  elt =document.getElementById("p2");
+  elt.innerHTML="INT219";
+
+function changetext(){
+    let  elt =document.getElementById("p2");
+    elt.innerHTML="INT219";
+}
+</script>
+</html>

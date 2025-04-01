@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Statements</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="p-10 bg-gray-900 text-white">
+    <h1 class="text-3xl font-bold text-center mb-6">JavaScript Control Statements</h1>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- If-Else Statement -->
+        <div class="p-5 rounded-2xl bg-gradient-to-r from-purple-500 to-indigo-600 shadow-lg">
+            <h2 class="text-xl font-semibold mb-3">If-Else Example</h2>
+            <p id="ifElseResult"></p>
+        </div>
+
+        <!-- Switch Case Statement -->
+        <div class="p-5 rounded-2xl bg-gradient-to-r from-green-500 to-teal-600 shadow-lg">
+            <h2 class="text-xl font-semibold mb-3">Switch Case Example</h2>
+            <p id="switchResult"></p>
+        </div>
+
+        <!-- Calculator using Switch -->
+        <div class="p-5 rounded-2xl bg-gradient-to-r from-blue-500 to-cyan-600 shadow-lg">
+            <h2 class="text-xl font-semibold mb-3">Calculator (Switch Case)</h2>
+            <p id="calcResult"></p>
+        </div>
+
+        <!-- For Loop -->
+        <div class="p-5 rounded-2xl bg-gradient-to-r from-yellow-500 to-orange-600 shadow-lg">
+            <h2 class="text-xl font-semibold mb-3">For Loop Example</h2>
+            <p id="forLoopResult"></p>
+        </div>
+
+        <!-- While Loop -->
+        <div class="p-5 rounded-2xl bg-gradient-to-r from-pink-500 to-red-600 shadow-lg">
+            <h2 class="text-xl font-semibold mb-3">While Loop Example</h2>
+            <p id="whileLoopResult"></p>
+        </div>
+
+        <!-- Do-While Loop -->
+        <div class="p-5 rounded-2xl bg-gradient-to-r from-gray-500 to-black shadow-lg">
+            <h2 class="text-xl font-semibold mb-3">Do-While Loop Example</h2>
+            <p id="doWhileResult"></p>
+        </div>
+    </div>
+
+    <script>
+        let cgpa = 9;
+        let internship;
+        if (cgpa >= 9) {
+            internship = "Internship in Google";
+        } else if (cgpa >= 8) {
+            internship = "Internship in TCS";
+        } else if (cgpa >= 7) {
+            internship = "Internship in Infosys";
+        } else {
+            internship = "In-house Internship";
+        }
+        document.getElementById("ifElseResult").innerText = internship;
+
+        let a = 2;
+        let switchText;
+        switch (a) {
+            case 1:
+                switchText = "Case 1 match";
+                break;
+            case 2:
+                switchText = "Case 2 match\nCase 3 match";
+                break;
+            case 3:
+                switchText = "Case 3 match";
+                break;
+            default:
+                switchText = "No Case match";
+        }
+        document.getElementById("switchResult").innerText = switchText;
+
+        let num1 = 10,
+            num2 = 5,
+            operation = "+";
+        let result;
+        switch (operation) {
+            case "+":
+                result = num1 + num2;
+                break;
+            case "-":
+                result = num1 - num2;
+                break;
+            case "*":
+                result = num1 * num2;
+                break;
+            case "/":
+                result = (num2 !== 0) ? (num1 / num2) : "Cannot divide by zero";
+                break;
+            default:
+                result = "Invalid Operation";
+        }
+        document.getElementById("calcResult").innerText = `10 ${operation} 5 = ${result}`;
+
+        let forLoopOutput = "";
+        for (let i = 1; i <= 5; i++) {
+            forLoopOutput += i + " ";
+        }
+        document.getElementById("forLoopResult").innerText = forLoopOutput;
+
+        let k = 2,
+            whileLoopOutput = "";
+        while (k <= 20) {
+            whileLoopOutput += k + " ";
+            k += 2;
+        }
+        document.getElementById("whileLoopResult").innerText = whileLoopOutput;
+
+        let num = 2,
+            doWhileOutput = "";
+        do {
+            doWhileOutput += num + " ";
+            num++;
+        } while (num <= 20);
+        document.getElementById("doWhileResult").innerText = doWhileOutput;
+    </script>
+</body>
+
+</html>

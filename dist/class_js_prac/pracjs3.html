@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+<div>
+    <!-- <img src="/image.png" class="w-full h-full" onclick="genAlert() "> -->
+    
+    <!-- <img src="/image.png" class="w-full h-full" onmousedown="genAlert() "> -->
+    <!-- <img src="/image.png" height="500px" width="500px" class="w-50 h-50" onmouseenter="genAlert() "> -->
+    <!-- <img src="/image.png" height="500px" width="500px" class="w-50 h-50" onmouseleave="genAlert() "> -->
+    <!-- <img src="/image.png" height="500px" width="500px" class="w-50 h-50" onmouseenter="increaseCount() "> -->
+    <!-- <img src="/image.png" height="500px" width="500px" class="w-50 h-50" onmouseup="genAlert() "> -->
+    <!-- <img src="/image.png" height="500px" width="500px" class="w-50 h-50" onmouseout="genAlert() "> -->
+    <!-- <img src="/image.png" height="500px" width="500px" class="w-50 h-50" onmouseover="genAlert() "> -->
+</div>
+
+<div>
+    <form action="">
+        <input type="text" id="myInput" placeholder="Enter your name" onkeydown="genAlert()">
+        <br>
+        <input type="text" id="myInput" placeholder="Enter your name" onkeypress="genAlert()">
+        <br>
+        <input type="text" id="myInput" placeholder="Enter your name" onkeyup="genAlert()">
+        <br>
+        <input type="text" id="myInput" placeholder="Enter your name" onblur="genAlert()">
+         <br>
+         <input type="text" id="myInput" placeholder="Enter your name" onchange="genAlert()">
+         <br>
+         <input type="text" id="myInput" placeholder="Enter your name" onfocus="genAlert()">
+         <br>
+         <input type="text" id="myInput" placeholder="Enter your name" onsubmit="genAlert()">
+    </form>
+</div>
+
+
+
+    <script>
+function genAlert() {
+    alert("hehehehehehehehehehehehehehehehehehehehehehehehehehehehe")
+}
+
+var count =0;
+function increaseCount() {
+    count++;
+     
+    console.log(count);
+}
+
+    </script>
+</body>
+</html>

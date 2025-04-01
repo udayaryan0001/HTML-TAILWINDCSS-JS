@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body>
+    <p id="p1">para1</p>
+    <p id="p2">para2</p>
+    <button onclick="change()" class="rounded-2xl">replace</button>
+    <div>
+        <p id="p3">para3</p>
+    </div>
+    <script>
+        function change()
+        {
+            let pn=document.getElementById("p2");
+            pn.innerHTML("paragraph");
+
+        }
+    </script>
+</body>
+</html>

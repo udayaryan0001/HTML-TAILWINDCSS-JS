@@ -1,0 +1,80 @@
+class conatiner //how to connect
+open the tailwind.com
+https://v3.tailwindcss.com/docs/container
+
+
+Class Container
+Breakpoint         Properties
+container	       None	width: 100%;
+sm (640px)	       max-width: 640px;
+md (768px)	       max-width: 768px;
+lg (1024px)	       max-width: 1024px;
+xl (1280px)	      max-width: 1280px;
+2xl (1536px)	  max-width: 1536px;
+​
+
+box-border= includes the padding and the border
+box-content=exclude
+
+visibility
+invisible  == elements will not visible but consume space;
+collaps  its deleted the full row
+hiddne == elements and space both are not visible;
+
+DISPLAY CLASSES
+
+block   
+inline
+inline-block
+flex
+grid
+
+
+
+flex 
+
+flex flex0-row,flex-col,
+justify-content
+Purpose: Aligns items horizontally along the main axis.
+align-items
+Purpose: Aligns items vertically along the cross axis.
+item-center  =for verticaly mid
+justify-center=aling in center horizontaly
+justify-evenly=same space between the items
+oder=it is used for changing the order of the items inside the div;
+flex-grow= it is used for increasing the size of the items inside the div; its default value is 0;
+flex-shrink= it is used for decreasing the size of the items inside the div; its default
+
+grid
+
+colspan rowspan we are using
+ 
+float
+clear
+overflow:
+overflowauto
+overflowscrol
+difference betwween the scroll and auto
+scroll = get x and y axis scrool Bar,
+it wil always add he scroll
+auto = only get the scroll bar when the content is more than the size of the div
+add the scroll as per the requirment
+
+overflow hiddne = content is hide but we can able to se using the js.
+overflow clip =content is hide parmanently we can't able to se using the js.
+
+
+//object fit
+object fill => it is the by default
+object conatin=>element's content to fit its container
+object cover => resize an element's content to cover its container
+
+
+
+h screen => it is the by default work according to the view port full screen dega
+w-full => gives 100%
+
+relative cover
+absolute cover
+fixed
+sticky

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="p1" class="para">Para 1</p>
+    <p id="p2" class="para">Para 2</p>
+    <p id="p3" class="para">Para 3</p>
+    <button onclick="replaceText()">Replace</button>
+    <script>
+        function replaceText() {
+            let elt = document.getElementById("p2");
+            elt.innerHTML = "int219";
+        }
+
+        // let elts = document.getElementsByClassName("para");
+        // // elts[2].innerHTML = "OK";
+        // for (let i = 0; i < elts.length; i++) {
+        //     elts[i].innerHTML = "Ok";
+        // }
+        let e = document.getElementsByTagName("p");
+        e[2].innerHTML = "java"
+    </script>
+</body>
+
+</html>

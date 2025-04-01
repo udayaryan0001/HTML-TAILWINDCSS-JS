@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">Creating a style</p>
+    <button id="b1" onclick="changeStyle()">Change style</button>
+    <script>
+        //element.style.property=value;
+        //element.classList.add(className);
+        //element.classList.remove(className);
+      function changeStyle()
+      {
+        let elt=document.getElementById("p1");
+        elt.style.color="red";
+        elt.style.fontSize="40px";
+        elt.style.fontWeight="bold";
+        elt.style.textDecoration="underline";
+        elt.style.textAlign="center";
+
+      }
+    </script>
+</body>
+</html>

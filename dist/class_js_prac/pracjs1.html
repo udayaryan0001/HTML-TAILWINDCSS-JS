@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <script>
+     
+    function calculateSquare(number) {
+        return number * number;
+    }
+
+     
+    function calculateSum(num1, num2) {
+        return num1 + num2;
+    }
+ 
+    let numForSquare = (prompt("Enter a number to calculate its square:"));
+    let square = calculateSquare(numForSquare);
+    document.write(`<p>The square of ${numForSquare} is: ${square}</p>`);
+
+     
+    let firstNum = Number(prompt("Enter first number for addition:"));
+    let secondNum = Number(prompt("Enter second number for addition:"));
+    let sum = calculateSum(firstNum, secondNum);
+    document.write(`<p>The sum of ${firstNum} and ${secondNum} is: ${sum}</p>`);
+    </script>
+</body>
+</html>
